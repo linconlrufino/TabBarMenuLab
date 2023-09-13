@@ -10,8 +10,6 @@
 		7D81A3382AAACACE000FA24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3372AAACACE000FA24B /* AppDelegate.swift */; };
 		7D81A33A2AAACACE000FA24B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3392AAACACE000FA24B /* SceneDelegate.swift */; };
 		7D81A33C2AAACACE000FA24B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A33B2AAACACE000FA24B /* ViewController.swift */; };
-		7D81A33F2AAACACE000FA24B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D81A33D2AAACACE000FA24B /* Main.storyboard */; };
-		7D81A3442AAACAD1000FA24B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D81A3422AAACAD1000FA24B /* LaunchScreen.storyboard */; };
 		7D81A34F2AAC1305000FA24B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A34E2AAC1305000FA24B /* UIColor+.swift */; };
 		7D81A3512AAC1380000FA24B /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3502AAC1380000FA24B /* FlagViewController.swift */; };
 		7D81A3532AAC147E000FA24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D81A3522AAC147E000FA24B /* Assets.xcassets */; };
@@ -22,8 +20,6 @@
 		7D81A3372AAACACE000FA24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D81A3392AAACACE000FA24B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D81A33B2AAACACE000FA24B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D81A33E2AAACACE000FA24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D81A3432AAACAD1000FA24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D81A3452AAACAD1000FA24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D81A34E2AAC1305000FA24B /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		7D81A3502AAC1380000FA24B /* FlagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = "<group>"; };
@@ -65,9 +61,7 @@
 				7D81A3392AAACACE000FA24B /* SceneDelegate.swift */,
 				7D81A33B2AAACACE000FA24B /* ViewController.swift */,
 				7D81A3502AAC1380000FA24B /* FlagViewController.swift */,
-				7D81A33D2AAACACE000FA24B /* Main.storyboard */,
 				7D81A3522AAC147E000FA24B /* Assets.xcassets */,
-				7D81A3422AAACAD1000FA24B /* LaunchScreen.storyboard */,
 				7D81A3452AAACAD1000FA24B /* Info.plist */,
 			);
 			path = TabBarMenuLab;
@@ -139,9 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D81A3442AAACAD1000FA24B /* LaunchScreen.storyboard in Resources */,
 				7D81A3532AAC147E000FA24B /* Assets.xcassets in Resources */,
-				7D81A33F2AAACACE000FA24B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,25 +153,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7D81A33D2AAACACE000FA24B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D81A33E2AAACACE000FA24B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7D81A3422AAACAD1000FA24B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D81A3432AAACAD1000FA24B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7D81A3462AAACAD1000FA24B /* Debug */ = {
@@ -308,7 +281,6 @@
 				INFOPLIST_FILE = TabBarMenuLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +308,6 @@
 				INFOPLIST_FILE = TabBarMenuLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

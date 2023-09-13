@@ -61,7 +61,7 @@ class ViewController: UIViewController {
             addChild(viewController1)
             addChild(viewController2)
             addChild(viewController3)
-            
+        
             // Exiba o primeiro controlador de visualização por padrão
             view.addSubview(viewController1.view)
             
@@ -71,10 +71,7 @@ class ViewController: UIViewController {
             viewController1.view.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
             viewController1.view.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
             viewController1.view.bottomAnchor.constraint(equalTo: tabBar.topAnchor).isActive = true
-            
-            // Oculte os outros controladores de visualização inicialmente
-            viewController2.view.isHidden = true
-            viewController3.view.isHidden = true
+
         }
 }
 
