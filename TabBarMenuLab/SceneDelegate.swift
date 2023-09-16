@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBar = UITabBarController()
         let flagVC = createFlagViewController()
-        let viewVC1 = createUIViewController1()
+        let viewVC1 = createHomeNavigationController()
         let viewVC2 = createUIViewController2()
     
         tabBar.viewControllers = [flagVC, viewVC1, viewVC2]
@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createFlagViewController() -> FlagViewController {
         let flagVC = FlagViewController()
         flagVC.title = "Guess The Flag"
-        flagVC.tabBarItem = UITabBarItem(title: "GuessTheFlag", image: nil, tag: 0)
+        flagVC.tabBarItem = UITabBarItem(title: "GuessTheFlag", image: UIImage(systemName: "flag"), tag: 0)
         
         return flagVC
     }
@@ -34,9 +34,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createUIViewController1() -> UIViewController {
         let xpto1VC = UIViewController()
         xpto1VC.title = "XPTO - 1"
+        xpto1VC.view.backgroundColor = .systemBlue
         xpto1VC.tabBarItem = UITabBarItem(title: "XPTO1", image: nil, tag: 1)
         
         return xpto1VC
+    }
+    
+    func createHomeNavigationController() -> UINavigationController {
+
+        let homeVC = UIViewController()
+        homeVC.title = "Home"
+        homeVC.view.backgroundColor = .systemPink
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
+
+        return UINavigationController(rootViewController: homeVC)
     }
     
     func createUIViewController2() -> UIViewController {
