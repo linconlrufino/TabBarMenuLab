@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D81A3382AAACACE000FA24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3372AAACACE000FA24B /* AppDelegate.swift */; };
 		7D81A33A2AAACACE000FA24B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3392AAACACE000FA24B /* SceneDelegate.swift */; };
-		7D81A33C2AAACACE000FA24B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A33B2AAACACE000FA24B /* ViewController.swift */; };
+		7D81A33C2AAACACE000FA24B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A33B2AAACACE000FA24B /* MainController.swift */; };
 		7D81A34F2AAC1305000FA24B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A34E2AAC1305000FA24B /* UIColor+.swift */; };
 		7D81A3512AAC1380000FA24B /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3502AAC1380000FA24B /* FlagViewController.swift */; };
 		7D81A3532AAC147E000FA24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D81A3522AAC147E000FA24B /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 		7D81A3342AAACACE000FA24B /* TabBarMenuLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarMenuLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D81A3372AAACACE000FA24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D81A3392AAACACE000FA24B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D81A33B2AAACACE000FA24B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D81A33B2AAACACE000FA24B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		7D81A3452AAACAD1000FA24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D81A34E2AAC1305000FA24B /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		7D81A3502AAC1380000FA24B /* FlagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				7D81A34D2AAC1305000FA24B /* Extensions */,
 				7D81A3372AAACACE000FA24B /* AppDelegate.swift */,
 				7D81A3392AAACACE000FA24B /* SceneDelegate.swift */,
-				7D81A33B2AAACACE000FA24B /* ViewController.swift */,
+				7D81A33B2AAACACE000FA24B /* MainController.swift */,
 				7D81A3502AAC1380000FA24B /* FlagViewController.swift */,
 				7D81A3522AAC147E000FA24B /* Assets.xcassets */,
 				7D81A3452AAACAD1000FA24B /* Info.plist */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D81A33C2AAACACE000FA24B /* ViewController.swift in Sources */,
+				7D81A33C2AAACACE000FA24B /* MainController.swift in Sources */,
 				7D81A3382AAACACE000FA24B /* AppDelegate.swift in Sources */,
 				7D81A3512AAC1380000FA24B /* FlagViewController.swift in Sources */,
 				7D81A33A2AAACACE000FA24B /* SceneDelegate.swift in Sources */,

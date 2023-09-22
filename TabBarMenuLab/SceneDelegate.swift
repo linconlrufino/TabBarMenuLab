@@ -4,70 +4,20 @@
 //
 //  Created by Linconl Rufino on 08/09/23.
 //
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-    func createTabBar() -> UITabBarController {
-        
-        let tabBar = UITabBarController()
-        let flagVC = createFlagViewController()
-        let viewVC1 = createHomeNavigationController()
-        let viewVC2 = createUIViewController2()
     
-        tabBar.viewControllers = [flagVC, viewVC1, viewVC2]
-        
-        return tabBar
-    }
-    
-    func createFlagViewController() -> FlagViewController {
-        let flagVC = FlagViewController()
-        flagVC.title = "Guess The Flag"
-        flagVC.tabBarItem = UITabBarItem(title: "GuessTheFlag", image: UIImage(systemName: "flag"), tag: 0)
-        
-        return flagVC
-    }
-    
-    func createUIViewController1() -> UIViewController {
-        let xpto1VC = UIViewController()
-        xpto1VC.title = "XPTO - 1"
-        xpto1VC.view.backgroundColor = .systemBlue
-        xpto1VC.tabBarItem = UITabBarItem(title: "XPTO1", image: nil, tag: 1)
-        
-        return xpto1VC
-    }
-    
-    func createHomeNavigationController() -> UINavigationController {
-
-        let homeVC = UIViewController()
-        homeVC.title = "Home"
-        homeVC.view.backgroundColor = .systemPink
-        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
-
-        return UINavigationController(rootViewController: homeVC)
-    }
-    
-    func createUIViewController2() -> UIViewController {
-        let xpto2VC = UIViewController()
-        xpto2VC.title = "XPTO - 2"
-        xpto2VC.tabBarItem = UITabBarItem(title: "XPTO2", image: nil, tag: 2)
-        
-        return xpto2VC
-    }
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
+        window = UIWindow(windowScene: windowScene)
+        
+        let viewController = MainController()
+        window?.rootViewController = viewController
         window?.makeKeyAndVisible()
-        
-        let tabBar = createTabBar()
-        
-        window?.rootViewController = tabBar
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -100,4 +50,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-

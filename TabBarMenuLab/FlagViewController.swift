@@ -40,7 +40,7 @@ class FlagViewController: UIViewController {
         flagOne.layer.borderWidth = 1
         flagOne.layer.cornerRadius = 12
         flagOne.layer.masksToBounds = true
-        flagOne.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        flagOne.addTarget(self, action: #selector(chooseFlag), for: .touchUpInside)
         flagOne.tag = 0
         return flagOne
     }()
@@ -50,7 +50,7 @@ class FlagViewController: UIViewController {
         flagTwo.layer.borderWidth = 1
         flagTwo.layer.cornerRadius = 12
         flagTwo.layer.masksToBounds = true
-        flagTwo.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        flagTwo.addTarget(self, action: #selector(chooseFlag), for: .touchUpInside)
         flagTwo.tag = 1
         return flagTwo
     }()
@@ -60,7 +60,7 @@ class FlagViewController: UIViewController {
         flagThree.layer.borderWidth = 1
         flagThree.layer.cornerRadius = 12
         flagThree.layer.masksToBounds = true
-        flagThree.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        flagThree.addTarget(self, action: #selector(chooseFlag), for: .touchUpInside)
         flagThree.tag = 2
         return flagThree
     }()
@@ -73,7 +73,7 @@ class FlagViewController: UIViewController {
         askQuestion()
     }
     
-    @objc func buttonTapped(_ sender: UIButton) {
+    @objc func chooseFlag(_ sender: UIButton) {
         numberOfQuestionsAnswered += 1
         
         var title: String
