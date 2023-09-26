@@ -8,7 +8,7 @@
 import UIKit
 
 class MainController: UIViewController {
-
+    
     private lazy var button: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +24,7 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupLayout()
     }
     
@@ -32,14 +32,12 @@ class MainController: UIViewController {
         let tabBarVC = UITabBarController()
         
         let vc1 = UINavigationController(rootViewController: FlagViewController())
-        let vc2 = UINavigationController(rootViewController: FirstViewController())
-        let vc3 = UINavigationController(rootViewController: SecondViewController())
+        let vc2 = UINavigationController(rootViewController: StarWarsController())
         
         vc1.title = "Guess The Flag"
-        vc2.title = "Home"
-        vc3.title = "Contact"
-
-        tabBarVC.setViewControllers([vc1, vc2, vc3], animated: false)
+        vc2.title = "Star Wars"
+        
+        tabBarVC.setViewControllers([vc1, vc2], animated: false)
         
         tabBarVC.tabBar.tintColor = .black
         tabBarVC.tabBar.backgroundColor = .white
@@ -49,7 +47,7 @@ class MainController: UIViewController {
             return
         }
         
-        let images = ["flag", "house", "person.circle"]
+        let images = ["flag", "star"]
         
         for x in 0..<items.count {
             items[x].image = UIImage(systemName: images[x])
@@ -71,22 +69,8 @@ class MainController: UIViewController {
             
         ])
     }
-    
-    class FirstViewController: UIViewController {
-        override func viewDidLoad(){
-            super.viewDidLoad()
-            view.backgroundColor = .red
-            title = "Home"
-        }
-    }
-    
-    class SecondViewController: UIViewController {
-        override func viewDidLoad(){
-            super.viewDidLoad()
-            view.backgroundColor = .lightGray
-            title = "Contact"
-        }
-    }
+}
+
 
 //func createTabBar() -> UITabBarController {
 //
