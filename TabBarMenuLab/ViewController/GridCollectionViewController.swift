@@ -31,6 +31,8 @@ class GridCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        collectionView.cellForItem(at: indexPath)?.backgroundColor = .systemPurple
+        
         print("Did tap coll at position: \(indexPath.row)")
     }
 
