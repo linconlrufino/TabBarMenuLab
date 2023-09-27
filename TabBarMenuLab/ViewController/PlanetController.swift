@@ -15,8 +15,7 @@ class PlanetController: UIViewController {
     
     override func viewDidLoad() {
         if let name = self.planetName {
-            let firstLast = name.components(separatedBy: " ")
-            nameTextField.text = firstLast.first
+            nameTextField.text = name
         }
         
         super.viewDidLoad()

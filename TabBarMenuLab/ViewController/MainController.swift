@@ -31,13 +31,22 @@ class MainController: UIViewController {
     @objc func didTapButton(){
         let tabBarVC = UITabBarController()
         
-        let vc1 = UINavigationController(rootViewController: FlagViewController())
-        let vc2 = UINavigationController(rootViewController: StarWarsController())
+        let flagVC = UINavigationController(rootViewController: FlagViewController())
+        let starWarsVC = UINavigationController(rootViewController: StarWarsViewController())
         
-        vc1.title = "Guess The Flag"
-        vc2.title = "Star Wars"
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: (view.frame.size.width/3)-3, height: (view.frame.size.width/3)-3)
+        layout.minimumLineSpacing  = 1
+        layout.minimumInteritemSpacing = 1
+        layout.scrollDirection = .vertical
+        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
+        let gridVC = UINavigationController(rootViewController: GridCollectionViewController(collectionViewLayout: layout))
         
-        tabBarVC.setViewControllers([vc1, vc2], animated: false)
+        flagVC.title = "Guess The Flag"
+        starWarsVC.title = "Star Wars"
+        gridVC.title = "Grid"
+        
+        tabBarVC.setViewControllers([flagVC, starWarsVC, gridVC], animated: false)
         
         tabBarVC.tabBar.tintColor = .black
         tabBarVC.tabBar.backgroundColor = .white
@@ -47,7 +56,7 @@ class MainController: UIViewController {
             return
         }
         
-        let images = ["flag", "star"]
+        let images = ["flag", "star", "table"]
         
         for x in 0..<items.count {
             items[x].image = UIImage(systemName: images[x])

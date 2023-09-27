@@ -10,6 +10,7 @@
 		7D7E983F2ABF92ED003FF1ED /* StarWarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E983E2ABF92ED003FF1ED /* StarWarsController.swift */; };
 		7D7E98422AC116EB003FF1ED /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E98402AC116EB003FF1ED /* PlanetController.swift */; };
 		7D7E98432AC116EB003FF1ED /* PlanetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7E98412AC116EB003FF1ED /* PlanetController.xib */; };
+		7D7E98472AC35D8B003FF1ED /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E98462AC35D8B003FF1ED /* GridCollectionViewController.swift */; };
 		7D81A3382AAACACE000FA24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3372AAACACE000FA24B /* AppDelegate.swift */; };
 		7D81A33A2AAACACE000FA24B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A3392AAACACE000FA24B /* SceneDelegate.swift */; };
 		7D81A33C2AAACACE000FA24B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A33B2AAACACE000FA24B /* MainController.swift */; };
@@ -22,6 +23,7 @@
 		7D7E983E2ABF92ED003FF1ED /* StarWarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsController.swift; sourceTree = "<group>"; };
 		7D7E98402AC116EB003FF1ED /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 		7D7E98412AC116EB003FF1ED /* PlanetController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetController.xib; sourceTree = "<group>"; };
+		7D7E98462AC35D8B003FF1ED /* GridCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
 		7D81A3342AAACACE000FA24B /* TabBarMenuLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarMenuLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D81A3372AAACACE000FA24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D81A3392AAACACE000FA24B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D7E98452AC35CE6003FF1ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D81A33B2AAACACE000FA24B /* MainController.swift */,
+				7D81A3502AAC1380000FA24B /* FlagViewController.swift */,
+				7D7E983E2ABF92ED003FF1ED /* StarWarsController.swift */,
+				7D7E98402AC116EB003FF1ED /* PlanetController.swift */,
+				7D7E98412AC116EB003FF1ED /* PlanetController.xib */,
+				7D7E98462AC35D8B003FF1ED /* GridCollectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		7D81A32B2AAACACE000FA24B = {
 			isa = PBXGroup;
 			children = (
@@ -63,15 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				7D81A34D2AAC1305000FA24B /* Extensions */,
+				7D7E98452AC35CE6003FF1ED /* ViewController */,
 				7D81A3372AAACACE000FA24B /* AppDelegate.swift */,
 				7D81A3392AAACACE000FA24B /* SceneDelegate.swift */,
-				7D81A33B2AAACACE000FA24B /* MainController.swift */,
-				7D81A3502AAC1380000FA24B /* FlagViewController.swift */,
-				7D7E983E2ABF92ED003FF1ED /* StarWarsController.swift */,
 				7D81A3522AAC147E000FA24B /* Assets.xcassets */,
 				7D81A3452AAACAD1000FA24B /* Info.plist */,
-				7D7E98402AC116EB003FF1ED /* PlanetController.swift */,
-				7D7E98412AC116EB003FF1ED /* PlanetController.xib */,
 			);
 			path = TabBarMenuLab;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 				7D81A3512AAC1380000FA24B /* FlagViewController.swift in Sources */,
 				7D81A33A2AAACACE000FA24B /* SceneDelegate.swift in Sources */,
 				7D7E98422AC116EB003FF1ED /* PlanetController.swift in Sources */,
+				7D7E98472AC35D8B003FF1ED /* GridCollectionViewController.swift in Sources */,
 				7D81A34F2AAC1305000FA24B /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

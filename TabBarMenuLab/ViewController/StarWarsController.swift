@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StarWarsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class StarWarsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let planets = ["Coruscant","Dagobah","Hoth","Endor","Naboo","Tatooine","Geonosis","Kamino","Kashyyyk","Mustafar","Alderaan"]
                    
     var tableView: UITableView!
