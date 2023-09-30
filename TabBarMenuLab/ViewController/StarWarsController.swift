@@ -38,10 +38,9 @@ class StarWarsViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.deselectRow(at: indexPath, animated: true)
         
         self.navigationController?.pushViewController(planetVC, animated: true)
-        
+    
 //        planetVC.modalPresentationStyle = .fullScreen
 //        present(planetVC, animated: true)
-        
 //        show(planetVC, sender: self)
     }
 }

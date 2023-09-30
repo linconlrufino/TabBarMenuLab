@@ -43,7 +43,6 @@ class MainController: UIViewController {
             button.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
             button.heightAnchor.constraint(equalToConstant: 52),
             button.widthAnchor.constraint(equalToConstant: 200)
-            
         ])
     }
     
